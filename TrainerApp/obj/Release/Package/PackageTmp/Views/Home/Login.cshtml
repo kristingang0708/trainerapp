@@ -1,0 +1,31 @@
+﻿@model TrainerApp.ViewModels.Login
+
+@{
+	ViewBag.Title = "Log In";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@{Html.BeginForm("LoginUser", "Home", FormMethod.Post, new { id = "userLoginForm" });}
+ 
+	<fieldset>
+		<legend>Where You Log In:</legend>
+
+		<div class="intputContainer">
+			<div class="labelContainer">
+				@Html.LabelFor(m => m.Username)
+			</div>
+			@Html.EditorFor(m => m.Username)
+		</div>
+		<div class="intputContainer">
+			<div class="labelContainer">
+				@Html.LabelFor(m => m.Password)
+			</div>
+			@Html.EditorFor(m => m.Password)
+		</div>	
+		
+		<input type="submit" value="Submit">
+	
+	</fieldset>
+
+@{Html.EndForm();}

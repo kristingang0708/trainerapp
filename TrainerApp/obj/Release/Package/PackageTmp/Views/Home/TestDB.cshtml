@@ -1,0 +1,15 @@
+﻿@model List<TrainerApp.Models.Lift>
+
+@{
+    ViewBag.Title = "Test DB";
+}
+<h2>@ViewBag.Title</h2>
+
+
+@foreach(var lift in Model)
+{
+	<div class="workout" style="clear:both;display:block;">
+		@lift.LiftName
+	</div>
+}
+ 

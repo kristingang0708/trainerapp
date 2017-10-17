@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:advworksnathan.database.windows.net,1433;Initial Catalog=TrainerDB;Persist Security Info=False;User ID=trainerApp;Password=2brutal4u!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Kristin\\Documents\\TrainerApp\\TrainerApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="TrainerDBConnectionString-Web.config Connection String" description="TrainerDBConnectionString Connection String used in web.config by the application to access the database." defaultValue="Data Source=advworksnathan.database.windows.net;Initial Catalog=TrainerDB;Persist Security Info=True;User ID=nathan;Password=@Baconey16" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Kristin\\Documents\\TrainerApp\\TrainerApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TrainerDBConnectionString']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,0 +1,15 @@
+﻿@model List<TrainerApp.Models.vwMax>
+
+@{
+    ViewBag.Title = "Max Lifts";
+}
+<h2>@ViewBag.Title</h2>
+
+
+@foreach(var maxLift in Model)
+{
+	<div class="workout" style="clear:both;display:block;">
+		@maxLift.liftname - @maxLift.max
+	</div>
+}
+ 

@@ -1,0 +1,12 @@
+﻿@using TrainerApp.Helpers;
+@using TrainerApp.ViewModels;
+@model LiftType
+
+@foreach (LiftType value in Enum.GetValues(typeof(LiftType)))
+{
+	<div>
+		@* Todo: for some reason value is null here. *@
+		@Html.Label(value.GetDescription())
+		@Html.RadioButtonFor(m => m, value)
+	</div>
+}
